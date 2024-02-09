@@ -1,2 +1,5 @@
-# SAN LABS TUTOR SITE
- A simpel website for my tutor info
+# README
+
+## Description
+This is a simple simple site to sowcase things i can tutor in
+
