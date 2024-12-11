@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    margin: 0 10px;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #3e8e41;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.course-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.social-media a:hover {
+    color: #3e8e41;
+}
+
+/* Styling for the project div */
+#project-div {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+    width: 80%;
+    background-color: #f9f9f9;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .buttons {
+        flex-wrap: wrap;
+    }
+
+    button {
+        margin: 5px;
+    }
+
+    table {
+        width: 100%;
+    }
+}
