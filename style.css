@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4; /* Light background for better contrast */
 }
 
 .container {
@@ -19,13 +20,13 @@ body {
 
 .navbar a {
     margin: 0 10px;
-    margin-top: 12px;
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     text-decoration: none;
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
 .navbar a:hover {
@@ -35,21 +36,25 @@ body {
 .buttons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow buttons to wrap */
     margin-bottom: 20px;
 }
 
 button {
-    margin: 0 10px;
-    padding: 10px 20px;
+    margin: 5px; /* Reduced margin for better spacing */
+    padding: 12px 24px; /* Increased padding for better touch targets */
+    font-size: 16px; /* Larger font size for readability */
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
 }
 
 button:hover {
     background-color: #3e8e41;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
 h1 {
@@ -87,36 +92,33 @@ tr:nth-child(even) {
 }
 
 .social-media a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: black;
-    font-size: 24px;
+    margin: 0 10px; 
+    text-decoration: none; 
+    color: black; 
+    font-size: 24px; 
 }
 
-.social-media a:hover {
-    color: #3e8e41;
+.social-media a:hover { 
+  color:#3e8e41; 
 }
 
 /* Styling for the project div */
 #project-div {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-top: 20px;
-    width: 80%;
-    background-color: #f9f9f9;
+  border :1px solid #ddd; 
+  padding :10px; 
+  margin-top :20px; 
+  width :80%; 
+  background-color :#fff; /* Changed to white for better contrast */
+  box-shadow :0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
 /* Media Queries */
-@media only screen and (max-width: 600px) {
-    .buttons {
-        flex-wrap: wrap;
-    }
-
-    button {
-        margin: 5px;
-    }
-
-    table {
-        width: 100%;
-    }
-}
+ @media only screen and (max-width :600px) {
+     button {
+         padding :10px; /* Smaller padding for mobile */
+         font-size :14px; /* Smaller font size */
+     }
+     table { 
+         width :100%; /* Full width for tables on small screens */ 
+     }
+ }
